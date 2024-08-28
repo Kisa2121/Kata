@@ -28,7 +28,7 @@ public class Main {
             throw new Exception("Первое слово не выделено кавычками");
         }
 
-        if (firstWord.length() > 10) {
+        if (firstWord.length() > 12) {
             throw new Exception("Длина первого слова превышает 10 символов");
         }
 
@@ -37,7 +37,7 @@ public class Main {
             if (matcher2.find()) {
                 throw new Exception("Вторая строка, являющаяся числом, выделена кавычками");
             }
-            if (secondInt < 1 || secondInt > 10) {
+            if (secondInt <= 1 || secondInt >= 10) {
                 throw new Exception("Вторая строка, являющаяся числом, должна быть от 1 до 10");
             }
         } catch (NumberFormatException e) {
