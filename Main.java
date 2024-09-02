@@ -37,7 +37,7 @@ public class Main {
             }
             try {
                 int secondInt = Integer.parseInt(secondWord);
-                if (secondInt <= 1 || secondInt >= 10) {
+                if (secondInt < 1 || secondInt > 10) {
                     throw new Exception("Вторая строка, являющаяся числом, должна быть от 1 до 10");
                 }
             } catch (NumberFormatException e) {
